@@ -1,8 +1,8 @@
-import water from '../../assets/water.jpg';
-import soft from '../../assets/soft.jpg';
-import tea from '../../assets/icetea.jpg';
-import laban from '../../assets/laban.png';
-import spark from '../../assets/sparkwater.jpg';
+import water from '../assets/water.jpg';
+import soft from '../assets/soft.jpg';
+import tea from '../assets/icetea.jpg';
+import laban from '../assets/laban.png';
+import spark from '../assets/sparkwater.jpg';
 
 // Menu Categories
 export const categories = [
