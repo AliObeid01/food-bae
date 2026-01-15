@@ -230,7 +230,7 @@ function About() {
                 </div>
                 <div>
                   <span className="block font-semibold text-lg text-brown-600">Mohamad Abadi</span>
-                  <span className="text-sm text-brown-400">Founder & CEO</span>
+                  <span className="text-sm text-brown-400">Co-Founder</span>
                 </div>
               </div>
             </div>

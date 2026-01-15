@@ -40,6 +40,18 @@ function Home() {
     );
   };
 
+  const isOpen = () => {
+    const now = new Date()
+    // const day = now.getDay()
+    const hour = now.getHours()
+    
+    if (hour >= 3 && hour <= 13) {
+      return false;
+    }
+
+    return true;
+  }
+
   const values = [
     {
       icon: <Flame className="w-7 h-7" />,
@@ -513,12 +525,28 @@ function Home() {
               >
                 <div className="flex items-center gap-3 px-5 py-3 bg-white rounded-2xl shadow-lg border border-cream-200">
                   <span className="relative flex h-3 w-3">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+                    {isOpen() ? (
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                    ) : (
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                    )}
+                    {isOpen() ? (
+                      <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+                    ) : (
+                      <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+                    )}
                   </span>
                   <div>
-                    <p className="text-xs text-brown-400">We're</p>
-                    <p className="font-semibold text-green-600">Open Now!</p>
+                    {isOpen() ? (
+                      <>
+                        <p className="text-xs text-brown-400">We&apos;re</p>
+                        <p className="font-semibold text-green-600">Open Now!</p>
+                      </>
+                    ) : (
+                      <>
+                        <p className="font-semibold text-red-600">Closed Now</p>
+                      </>
+                    )}
                   </div>
                 </div>
               </motion.div>

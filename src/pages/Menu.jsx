@@ -55,6 +55,7 @@ function Menu() {
 
   const handleCategoryChange = useCallback((categoryId) => {
     setActiveCategory(categoryId);
+    window.scrollTo({ top: 250, behavior: 'smooth' });
   }, []);
 
   const handleDietaryFilterChange = useCallback((filter) => {
