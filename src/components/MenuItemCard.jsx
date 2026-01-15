@@ -104,14 +104,14 @@ function MenuItemCard({ item, index = 0 }) {
         {/* Content */}
         <div className="p-5">
           {/* Customizable indicator */}
-          {item.availableModifiers?.length > 0 && (
+          {/* {item.availableModifiers?.length > 0 && (
             <div className="flex items-center gap-1.5 mb-2">
               <Sparkles size={12} className="text-secondary-400" />
               <span className="text-xs font-semibold text-secondary-500 uppercase tracking-wide">
                 Customizable
               </span>
             </div>
-          )}
+          )} */}
 
           {/* Name */}
           <h3 className="font-display text-xl text-brown-600 group-hover:text-primary-500 transition-colors duration-300 line-clamp-1">
@@ -133,6 +133,11 @@ function MenuItemCard({ item, index = 0 }) {
                 <span className="text-sm text-brown-400 line-through">
                   ${item.originalPrice.toFixed(2)}
                 </span>
+              )}
+            {item.availableModifiers?.length > 0 && (
+              <span className="text-xs font-semibold text-secondary-500 uppercase tracking-wide">
+                Customizable
+              </span>
               )}
             </div>
             
