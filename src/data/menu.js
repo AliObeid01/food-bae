@@ -1,7 +1,7 @@
-import water from '../assets/water.jpg';
+import water from '../assets/water.png';
 import soft from '../assets/soft.jpg';
-import tea from '../assets/icetea.jpg';
-import laban from '../assets/laban.png';
+import tea from '../assets/icetea.png';
+import laban from '../assets/laban.jpg';
 import spark from '../assets/sparkwater.jpg';
 
 // Menu Categories
@@ -99,7 +99,7 @@ export const menuItems = [
     image: 'https://rest.thrubits.com/uploads/restorants/726bcf73-d64c-489d-b0ab-6240b48fb6d9_medium.jpg',
     rating: 4.8,
     isHealthy: true,
-    isBestSeller: true,
+    // isBestSeller: true,
     availableModifiers: [],
   },
   {
@@ -1278,7 +1278,7 @@ export const modifiers = [
 // ];
 
 // Get best sellers
-export const getBestSellers = () => menuItems.filter(item => item.isBestSeller);
+export const getBestSellers = () => menuItems.filter(item => item.isBestSeller && item.category !== 'combos');
 
 // Get popular items
 export const getPopularItems = () => menuItems.filter(item => item.isPopular);
