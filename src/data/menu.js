@@ -1,3 +1,9 @@
+import water from '../assets/water.jpg';
+import soft from '../assets/soft.jpg';
+import tea from '../assets/icetea.jpg';
+import laban from '../assets/laban.png';
+import spark from '../assets/sparkwater.jpg';
+
 // Menu Categories
 export const categories = [
   { id: 'fit-bae', name: 'Fit Bae', icon: '💪' },
@@ -872,7 +878,7 @@ export const menuItems = [
     description: 'Bottled water.',
     price: 0.40,
     category: 'beverages',
-    image: '/public/water.jpg',
+    image: {water},
     rating: 4.0,
     availableModifiers: [],
   },
@@ -882,7 +888,7 @@ export const menuItems = [
     description: 'Coca-Cola, Sprite, Fanta, or other soft drinks.',
     price: 1.10,
     category: 'beverages',
-    image: '/public/soft.jpg',
+    image: {soft},
     rating: 4.2,
     availableModifiers: [],
   },
@@ -892,7 +898,7 @@ export const menuItems = [
     description: 'Refreshing iced tea.',
     price: 1.10,
     category: 'beverages',
-    image: '/public/icetea.jpg',
+    image: {tea},
     rating: 4.3,
     availableModifiers: [],
   },
@@ -902,7 +908,7 @@ export const menuItems = [
     description: 'Traditional Lebanese yogurt drink.',
     price: 1.10,
     category: 'beverages',
-    image: '/public/laban.png',
+    image: {laban},
     rating: 4.4,
     availableModifiers: [],
   },
@@ -912,7 +918,7 @@ export const menuItems = [
     description: 'Carbonated sparkling water.',
     price: 1.10,
     category: 'beverages',
-    image: '/public/sparkwater.jpg',
+    image: {spark},
     rating: 4.1,
     availableModifiers: [],
   },
