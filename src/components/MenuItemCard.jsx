@@ -119,7 +119,7 @@ function MenuItemCard({ item, index = 0 }) {
           </h3>
 
           {/* Description */}
-          <p className="mt-2 text-sm text-brown-400 line-clamp-2 leading-relaxed">
+          <p className="mt-2 text-sm text-brown-400 line-clamp-2 leading-relaxed min-h-[3.5em]">
             {item.description}
           </p>
 
