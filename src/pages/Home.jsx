@@ -45,7 +45,7 @@ function Home() {
     // const day = now.getDay()
     const hour = now.getHours()
     
-    if (hour >= 3 && hour <= 13) {
+    if (hour >= 3 && hour < 13) {
       return false;
     }
 

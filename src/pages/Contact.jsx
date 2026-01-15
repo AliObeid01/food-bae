@@ -44,7 +44,7 @@ function Contact() {
 
   const isOpen = () => {
     const hour = new Date().getHours();
-    return !(hour >= 3 && hour <= 13);
+    return !(hour >= 3 && hour < 13);
   };
 
   const handleWhatsAppOrder = () => {
